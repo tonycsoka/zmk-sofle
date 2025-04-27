@@ -14,10 +14,10 @@ manifest:
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: refactor
-    #  - name: mario-peripheral-animation
-    #   remote: gpeye
-    #   revision: main 
-    - name: bongo-cat-animation #new entry
+    # - name: mario-peripheral-animation
+    #  remote: gpeye
+    #  revision: main 
+    - name: nice-view-mod #new entry
       remote: dsifry #new entry
       revision: main #new entry
     - name: zmk
