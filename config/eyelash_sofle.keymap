@@ -35,6 +35,34 @@
         tap-ms = <100>;
     };
 
+    left_meh: left_meh {
+        compatible = "zmk,behavior-tap-dance";
+        label = "LEFT_MEH";
+        #binding-cells = <0>;
+        bindings = <&kp LEFT_CONTROL>, <&kp LS(LA(LEFT_CONTROL))>;
+    };
+
+    right_meh: right_meh {
+        compatible = "zmk,behavior-tap-dance";
+        label = "RIGHT_MEH";
+        #binding-cells = <0>;
+        bindings = <&kp RIGHT_CONTROL>, <&kp RS(RA(RIGHT_CONTROL))>;
+    };
+
+    left_hyper: left_hyper {
+        compatible = "zmk,behavior-tap-dance";
+        label = "LEFT_HYPER";
+        #binding-cells = <0>;
+        bindings = <&kp LEFT_ALT>, <&kp LS(LG(LC(LEFT_ALT)))>;
+    };
+
+    right_hyper: right_hyper {
+        compatible = "zmk,behavior-tap-dance";
+        label = "RIGHT_HYPER";
+        #binding-cells = <0>;
+        bindings = <&kp RIGHT_ALT>, <&kp RS(RC(RG(RIGHT_ALT)))>;
+    };
+
     behaviors {
     };
 
@@ -43,11 +71,11 @@
 
         Main {
             bindings = <
-&gresc            &kp N1     &kp N2        &kp N3        &kp N4  &kp N5     &kp UP_ARROW     &kp N6     &kp N7  &kp N8             &kp N9         &kp N0             &kp BACKSPACE
-&kp TAB           &kp Q      &kp W         &kp E         &kp R   &kp T      &kp DOWN_ARROW   &kp Y      &kp U   &kp I              &kp O          &kp P              &kp BSLH
-&caps_word        &kp A      &kp S         &kp D         &kp F   &kp G      &kp LEFT_ARROW   &kp H      &kp J   &kp K              &kp L          &kp SEMI           &kp APOS
-&mt LSHFT LS(N9)  &kp Z      &kp X         &kp C         &kp V   &kp B      &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA          &kp DOT        &kp FSLH           &mt RIGHT_SHIFT RS(N0)
-&kp C_MUTE        &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp RET    &kp ENTER        &kp SPACE  &mo 2   &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&gresc            &kp N1     &kp N2       &kp N3        &kp N4  &kp N5     &kp UP_ARROW     &kp N6     &kp N7  &kp N8             &kp N9        &kp N0      &kp BACKSPACE
+&kp TAB           &kp Q      &kp W        &kp E         &kp R   &kp T      &kp DOWN_ARROW   &kp Y      &kp U   &kp I              &kp O         &kp P       &kp BSLH
+&caps_word        &kp A      &kp S        &kp D         &kp F   &kp G      &kp LEFT_ARROW   &kp H      &kp J   &kp K              &kp L         &kp SEMI    &kp APOS
+&mt LSHFT LS(N9)  &kp Z      &kp X        &kp C         &kp V   &kp B      &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA          &kp DOT       &kp FSLH    &mt RIGHT_SHIFT RS(N0)
+&kp C_MUTE        &left_meh  &left_hyper  &kp LEFT_GUI  &mo 1   &kp RET    &kp ENTER        &kp SPACE  &mo 2   &kp RIGHT_COMMAND  &right_hyper  &right_meh
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
