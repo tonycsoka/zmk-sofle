@@ -28,17 +28,17 @@ layers:
   - P
   - {t: \, s: '|'}
   - $$mdi:alpha-w-box$$
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - A
+  - S
+  - D
   - F
   - G
   - $$mdi:arrow-left-bold$$
   - H
   - J
-  - {t: K, h: RIGHT GUI}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - K
+  - L
+  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: Sft+9, h: '$$mdi:apple-keyboard-shift$$', s: Sft+(}
   - Z
@@ -54,8 +54,8 @@ layers:
   - {t: /, s: '?'}
   - {t: Sft+0, h: '$$mdi:apple-keyboard-shift$$', s: Sft+)}
   - $$mdi:volume-off$$
-  - '&left_meh'
-  - '&left_hyper'
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - Layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -63,8 +63,8 @@ layers:
   - $$mdi:keyboard-space$$
   - Layer2
   - $$mdi:apple-keyboard-command$$
-  - '&right_hyper'
-  - '&right_meh'
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   Layer1:
   - {t: '`', s: '~'}
   - F1
@@ -153,8 +153,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F11
-  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - _
   - +
   - {t: '$$mdi:transfer$$', type: trans}
