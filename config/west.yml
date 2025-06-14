@@ -12,11 +12,8 @@ manifest:
       url-base: https://github.com/dsifry #new entry
   projects:
     - name: eyelash_sofle
-      url: https://github.com/a741725193/zmk-sofle
-      revision: refactor
-    # - name: mario-peripheral-animation
-    #  remote: gpeye
-    #  revision: main 
+      url: https://github.com/tonycsoka/zmk-sofle
+      revision: main
     - name: nice-view-mod #new entry
       remote: dsifry #new entry
       revision: main #new entry
